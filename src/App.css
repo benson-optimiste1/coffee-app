@@ -5,19 +5,34 @@
   margin: 0;
   padding: 0;
 }
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin-top: 1em;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 1em;
+
+}
 
 body{
   box-sizing: border-box;
   background-color: #7f5d00;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'roboto' sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #f4eda9;
   padding: 1em;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100vh;
 
 }
 
@@ -27,7 +42,7 @@ header{
   align-items: center;
   height: 160px;
   background-color: #f4eda920;
-  border-radius: 10px;
+  
 
 }
 h1{
@@ -36,12 +51,20 @@ h1{
   color:#2c2100;
 }
 
-main{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+button{
+  padding: 8px 24px;
+  font-size: 1.4em;
+  margin: 4px;
+}
+.coffee-card{
+  width: 300px;
+  background-color: #ffffff20;
+  border-radius: 10px;
   padding: 1em;
+  margin: 8px;
+}
+.coffee-card > img {
+  width: 100%;
 }
 footer{
   display: flex;
